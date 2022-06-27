@@ -1,0 +1,11 @@
+<template name="edit">
+    <div class="editInfoForm">
+        <form name="editInfo" id="editInfo">
+            {{#with data}}
+          <input type="text" id="username" value="{{name}}">
+          <input type="number" id="userphone" value="{{phone}}">
+          {{/with}}
+          <button type="submit">Edit</button>
+        </form>
+    </div>
+</template>

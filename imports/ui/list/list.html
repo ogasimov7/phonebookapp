@@ -1,0 +1,20 @@
+<template name="list">
+    <table>
+        <tr>
+          <th>Number</th>
+          <th>Name</th>
+          <th>Phone</th>
+          <th>Delete</th>
+        </tr>
+        <tbody>
+           {{#each datas}}
+           <tr>
+               <td>{{number}}</td>
+               <td><a href="/edit/{{_id}}">{{name}}</a></td>
+               <td>{{phone}}</td>
+               <td><button data-id="{{_id}}" class="deletUser">Delete</button></td>
+            </tr>
+            {{/each}}
+        </tbody>
+      </table>
+</template>
